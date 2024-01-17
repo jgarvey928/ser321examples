@@ -10,6 +10,9 @@ You do not need to install anything things will run through the gradle file.
 
 - `host`, `port` and `message` are optional arguments for the program.
 
+
+The below is only needed for Python which is nothing we need for the course
+
 #### PYTHON Install Dependencies
 These need to be installed
 ###### (use of virtualenv recommended for `pip` installs)
@@ -19,7 +22,7 @@ These need to be installed
   4. pip install grpcio-tools
 
 ##### To compile grpc and protocol buffers for Gradle [from the `Sockets` directory]:
-- gradle generatProto
+- gradle generateProto
 - gradle pythonProto
 
 This will generate the py files for proto and grpc, sorry for the two separate calls.
