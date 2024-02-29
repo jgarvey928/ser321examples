@@ -85,6 +85,7 @@ void handle_client_socket(int client_sock) {
 
     //1) Receive message.
     ssize_t numBytesRcvd = recv(client_sock, buffer, RCVBUFSIZE, 0);
+	printf("Recieved: %s\n", buffer);
      if (numBytesRcvd < 0) {
         exit_client("recv() failed");
      }
@@ -104,6 +105,7 @@ void handle_client_socket(int client_sock) {
         if (numBytesRcvd < 0) {
             exit_client("recv() failed");
         }
+        printf("Recieved: %s\n", buffer);
     }
 
     //4) Close the socket.
